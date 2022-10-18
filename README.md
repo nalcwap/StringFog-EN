@@ -10,12 +10,12 @@ An Android plug-in tool that automatically encrypts strings in dex/aar/jar files
 - Full Gradle automation integration.
 - InstantRun is not supported.
 
-### Explain
+### How it works
 
 ![](https://github.com/MegatronKing/StringFog/blob/master/assets/flow.png)<br>
 
 
-### Encryption Example: 
+### Encryption Example
 
 - Before encryption:
 ```
@@ -36,7 +36,7 @@ decrypt: new byte[]{-113, 71...} => "This is a string!"
 ### obfuscate
 StringFog does not conflict with obfuscation at all, and there is no need to configure anti-obfuscation. In fact, StringFog with obfuscation will be better!
 
-### Usage:
+## Usage
 Since the gradle plugin is developed, it is very simple to integrate and will not affect the packaged configuration. The plugin has been uploaded to MavenCentral, and you can directly refer to the dependencies.
 
 <br>
