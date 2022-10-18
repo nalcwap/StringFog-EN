@@ -58,6 +58,7 @@ buildscript {
 }
 ```
 
+<br>
 
 ##### 2、Add library dependency at `build.gradle` of the app or library:
 ```
@@ -68,7 +69,7 @@ dependencies {
 }
 ```
 
-
+<br>
 
 ##### 3. Configure the plugin in the `build.gradle` of the app or library.
 ```
@@ -155,7 +156,7 @@ The encrypted and decrypted string plaintext and ciphertext will automatically g
 
 ## Changelog
 
-### v4.0.0
+### v4.0.0 (Latest Version)
 - Use ASM7 to support Android 12。
 - support AGP(Android Gradle Plugin) 7.x Version。
 - The StringFogMode option is added to the DSL, which is used to control the existence form of the encrypted string in the bytecode. It supports two modes: base64 and bytes, and base64 is used by default.
