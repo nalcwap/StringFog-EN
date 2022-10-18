@@ -98,6 +98,12 @@ stringfog {
 }
 ```
 
+<br><br>
+
+#### If You Have Any Runtime Problems with ASM Just Add This dependency:
+```
+implementation 'org.ow2.asm:asm:9.4'
+```
 
 <br><br>
 
