@@ -10,6 +10,7 @@ import org.gradle.api.Project
  *
  * @author Megatron King
  * @since 17/7/28 12:28
+ * @developed by Encept LTD Company
  */
 
 class StringFogTransformForLibrary extends StringFogTransform {
@@ -21,7 +22,7 @@ class StringFogTransformForLibrary extends StringFogTransform {
     @Override
     Set<QualifiedContent.Scope> getScopes() {
         return ImmutableSet.of(
-                QualifiedContent.Scope.PROJECT
+            QualifiedContent.Scope.PROJECT
         )
     }
 

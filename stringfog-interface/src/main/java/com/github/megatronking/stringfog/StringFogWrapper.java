@@ -19,7 +19,9 @@ package com.github.megatronking.stringfog;
  *
  * @author Megatron King
  * @since 2018/9/20 16:14
+ * @developed by Encept LTD Company
  */
+
 public final class StringFogWrapper implements IStringFog {
 
     private final IStringFog mStringFogImpl;

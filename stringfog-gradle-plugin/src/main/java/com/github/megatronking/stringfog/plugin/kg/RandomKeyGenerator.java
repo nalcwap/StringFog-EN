@@ -9,7 +9,9 @@ import java.security.SecureRandom;
  *
  * @author Megatron King
  * @since 2022/2/14 22:40
+ * @developed by Encept LTD Company
  */
+
 public class RandomKeyGenerator implements IKeyGenerator {
 
     private static final int DEFAULT_LENGTH = 8;

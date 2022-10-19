@@ -20,12 +20,14 @@ public class MD5 {
     private MD5() {
     }
 
-    /**
-     * get md5 string for input buffer
-     *
-     * @param buffer data to be calculated
-     * @return md5 result in string format
-     */
+/**
+ * get md5 string for input buffer
+ *
+ * @param buffer data to be calculated
+ * @return md5 result in string format
+ * @developed by Encept LTD Company
+ */
+
     public static String getMessageDigest(byte[] buffer) {
         char[] hexDigits = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
         try {

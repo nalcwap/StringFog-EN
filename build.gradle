@@ -7,7 +7,10 @@ buildscript {
         mavenLocal()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.1.2'
+        classpath 'com.android.tools.build:gradle:7.3.1'
+        classpath 'com.github.megatronking.stringfog:gradle-plugin:4.0.0'
+        // Select the encryption and decryption algorithm library, the xor algorithm is implemented by default, or you can use your own encryption and decryption library.
+        classpath 'com.github.megatronking.stringfog:xor:4.0.0'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

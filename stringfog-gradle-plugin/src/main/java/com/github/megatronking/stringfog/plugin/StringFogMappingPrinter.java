@@ -29,6 +29,7 @@ import java.io.IOException;
  *
  * @author Megatron King
  * @since 2018/9/21 11:07
+ * @developed by Encept LTD Company
  */
 /* package */ final class StringFogMappingPrinter {
 

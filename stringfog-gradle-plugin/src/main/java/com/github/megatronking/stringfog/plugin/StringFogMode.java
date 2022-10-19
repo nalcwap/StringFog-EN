@@ -3,6 +3,7 @@ package com.github.megatronking.stringfog.plugin;
 /**
  * Define how the encrypted string presents in java class.
  */
+
 public enum StringFogMode {
 
     /**

@@ -36,6 +36,7 @@ import java.util.List;
  *
  * @author Megatron King
  * @since 2017/3/6 20:37
+ * @developed by Encept LTD Company
  */
 
 /* package */ class StringFogClassVisitor extends ClassVisitor {

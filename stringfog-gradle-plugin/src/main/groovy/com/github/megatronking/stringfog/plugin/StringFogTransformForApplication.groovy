@@ -11,6 +11,7 @@ import org.gradle.api.Project
  *
  * @author Megatron King
  * @since 17/7/28 12:28
+ * @developed by Encept LTD Company
  */
 
 class StringFogTransformForApplication extends StringFogTransform {

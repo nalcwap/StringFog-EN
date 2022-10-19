@@ -25,7 +25,9 @@ import static java.lang.annotation.ElementType.TYPE;
  *
  * @author Megatron King
  * @since 2017/3/8 8:41
+ * @developed by Encept LTD Company
  */
+
 @Retention(RetentionPolicy.CLASS)
 @Target(value={TYPE})
 public @interface StringFogIgnore {

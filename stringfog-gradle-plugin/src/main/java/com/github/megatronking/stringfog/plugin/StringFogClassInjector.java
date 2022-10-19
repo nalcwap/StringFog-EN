@@ -45,8 +45,7 @@ public final class StringFogClassInjector {
     private final StringFogMode mMode;
     private final StringFogMappingPrinter mMappingPrinter;
 
-    public StringFogClassInjector(String[] fogPackages, IKeyGenerator kg, String implementation,
-                                  StringFogMode mode, String fogClassName, StringFogMappingPrinter mappingPrinter) {
+    public StringFogClassInjector(String[] fogPackages, IKeyGenerator kg, String implementation, StringFogMode mode, String fogClassName, StringFogMappingPrinter mappingPrinter) {
         this.mFogPackages = fogPackages;
         this.mKeyGenerator = kg;
         this.mStringFogImpl = new StringFogWrapper(implementation);

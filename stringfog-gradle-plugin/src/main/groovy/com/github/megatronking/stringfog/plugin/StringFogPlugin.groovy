@@ -26,6 +26,7 @@ import org.gradle.api.UnknownTaskException
  *
  * @author Megatron King
  * @since 2017/3/6 19:43
+ * @developed by Encept LTD Company
  */
 
 class StringFogPlugin implements Plugin<Project> {

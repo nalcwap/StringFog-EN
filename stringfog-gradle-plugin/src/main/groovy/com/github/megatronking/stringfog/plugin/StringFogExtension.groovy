@@ -31,6 +31,7 @@ import com.github.megatronking.stringfog.plugin.StringFogMode
  *
  * @author Megatron King
  * @since 2017/3/7 17:44
+ * @developed by Encept LTD Company
  */
 
 public class StringFogExtension {

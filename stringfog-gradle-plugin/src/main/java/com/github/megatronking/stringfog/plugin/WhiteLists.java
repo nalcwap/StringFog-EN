@@ -25,6 +25,7 @@ import java.util.List;
  *
  * @author Megatron King
  * @since 2017/3/7 19:34
+ * @developed by Encept LTD Company
  */
 
 final class WhiteLists {

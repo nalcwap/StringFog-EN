@@ -5,7 +5,9 @@ package com.github.megatronking.stringfog;
  *
  * @author Megatron King
  * @since 2022/1/14 22:15
+ * @developed by Encept LTD Company
  */
+
 public interface IKeyGenerator {
 
     /**

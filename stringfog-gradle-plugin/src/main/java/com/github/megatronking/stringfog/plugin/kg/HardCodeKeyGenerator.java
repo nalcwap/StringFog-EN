@@ -9,7 +9,9 @@ import java.nio.charset.StandardCharsets;
  *
  * @author Megatron King
  * @since 2022/2/14 22:34
+ * @developed by Encept LTD Company
  */
+
 public class HardCodeKeyGenerator implements IKeyGenerator {
 
     private final byte[] mKey;

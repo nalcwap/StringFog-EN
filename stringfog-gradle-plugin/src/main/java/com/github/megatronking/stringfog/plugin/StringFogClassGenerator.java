@@ -28,7 +28,9 @@ import javax.lang.model.element.Modifier;
  *
  * @author Megatron King
  * @since 2018/9/20 17:41
+ * @developed by Encept LTD Company
  */
+
 public final class StringFogClassGenerator {
 
 
@@ -60,24 +62,23 @@ public final class StringFogClassGenerator {
         javaWriter.emitEmptyLine();
         if (mode == StringFogMode.base64) {
             javaWriter.beginMethod(String.class.getSimpleName(), "decrypt",
-                    ImmutableSet.of(Modifier.PUBLIC, Modifier.STATIC),
-                    String.class.getSimpleName(), "value",
-                    String.class.getSimpleName(), "key");
+                ImmutableSet.of(Modifier.PUBLIC, Modifier.STATIC),
+                String.class.getSimpleName(), "value",
+                String.class.getSimpleName(), "key");
             javaWriter.emitStatement("return IMPL.decrypt(java.util.Base64.getDecoder().decode(value), " +
                     "java.util.Base64.getDecoder().decode(key))");
             javaWriter.endMethod();
         } else if (mode == StringFogMode.bytes) {
             javaWriter.beginMethod(String.class.getSimpleName(), "decrypt",
-                    ImmutableSet.of(Modifier.PUBLIC, Modifier.STATIC),
-                    byte[].class.getSimpleName(), "value",
-                    byte[].class.getSimpleName(), "key");
+                ImmutableSet.of(Modifier.PUBLIC, Modifier.STATIC),
+                byte[].class.getSimpleName(), "value",
+                byte[].class.getSimpleName(), "key");
             javaWriter.emitStatement("return IMPL.decrypt(value, key)");
             javaWriter.endMethod();
         }
 
         javaWriter.emitEmptyLine();
         javaWriter.endType();
-
         javaWriter.close();
     }
 }

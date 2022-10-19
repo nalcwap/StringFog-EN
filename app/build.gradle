@@ -1,11 +1,35 @@
 apply plugin: 'com.android.application'
+apply plugin: 'stringfog'
+
+// Import RandomKeyGenerator class, if you don't use RandomKeyGenerator, you can delete this line
+import com.github.megatronking.stringfog.plugin.kg.RandomKeyGenerator
+
+stringfog {
+
+    // Required: The implementation class path of the encryption and decryption library must be consistent with the encryption and decryption algorithm    library configured above.
+    implementation 'com.github.megatronking.stringfog.xor.StringFogImpl'
+
+    // Optional: Encryption switch, enabled by default.
+    enable true
+
+    // Optional: Specify the path of the code package to be encrypted. Multiple paths can be configured. If not specified, all of them will be encrypted by default.
+    fogPackages = ['com.github.megatronking.stringfog']
+
+    // Optional: Specify the key generator, and use a random key of length 8 by default (each string has a different random key).
+    // You can also specify a fixed key: HardCodeKeyGenerator("This is a key")
+    kg new RandomKeyGenerator()
+
+    // Optional (new in version 4.0): used to control the existence form of the encrypted string in the bytecode, the default is bytes, you can change it to "mode bytes" OR "mode base64".
+    mode bytes
+}
+
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 33
     defaultConfig {
         applicationId "com.github.megatronking.stringfog"
         minSdkVersion 15
-        targetSdkVersion 28
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
@@ -16,10 +40,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'com.github.megatronking.stringfog'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.github.megatronking.stringfog:xor:4.0.0'
+
     testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'junit:junit:4.12'
 }

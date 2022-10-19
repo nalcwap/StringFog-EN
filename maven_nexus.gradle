@@ -67,6 +67,7 @@ publishing {
             }
         }
     }
+
     repositories {
         maven {
             def releasesRepoUrl = getReleaseRepositoryUrl()

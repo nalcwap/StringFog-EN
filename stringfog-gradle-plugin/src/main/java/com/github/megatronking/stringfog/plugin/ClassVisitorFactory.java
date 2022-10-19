@@ -28,6 +28,7 @@ import org.objectweb.asm.Opcodes;
  *
  * @author Megatron King
  * @since 2017/3/7 19:56
+ * @developed by Encept LTD Company
  */
 
 public final class ClassVisitorFactory {
@@ -36,8 +37,8 @@ public final class ClassVisitorFactory {
     }
 
     public static ClassVisitor create(IStringFog stringFogImpl, StringFogMappingPrinter mappingPrinter,
-                                      String[] fogPackages, IKeyGenerator kg, String fogClassName,
-                                      String className, StringFogMode mode, ClassWriter cw) {
+    String[] fogPackages, IKeyGenerator kg, String fogClassName,
+    String className, StringFogMode mode, ClassWriter cw) {
         if (WhiteLists.inWhiteList(className) || !isInFogPackages(fogPackages, className)) {
             Log.v("StringFog ignore: " + className);
             return createEmpty(cw);

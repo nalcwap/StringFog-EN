@@ -19,7 +19,9 @@ package com.github.megatronking.stringfog;
  *
  * @author Megatron King
  * @since 2018/9/20 16:15
+ * @developed by Encept LTD Company
  */
+
 public interface IStringFog {
 
     /**

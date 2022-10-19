@@ -18,6 +18,7 @@ package com.github.megatronking.stringfog.plugin;
  *
  * @author Megatron King
  * @since 2017/3/7 10:54
+ * @developed by Encept LTD Company
  */
 
 /* package */ class ClassStringField {

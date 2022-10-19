@@ -19,9 +19,9 @@ import java.nio.charset.StandardCharsets;
 
 /**
  * StringFog xor encrypt and decrypt implementation.
- *
  * @author Megatron King
  * @since 2018/9/2 14:34
+ * @developed by Encept LTD Company
  */
 public final class StringFogImpl implements IStringFog {
 
